@@ -1,0 +1,31 @@
+.mainpagelayout {
+  height: auto;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem;
+  margin-top: 2rem;
+  min-height: 240px;
+  padding-left: 1rem;
+}
+
+.create-tasks {
+  align-self: flex-start;
+  padding-bottom: 0.4rem;
+  padding-top: 0.8rem;
+  min-width: 220px;
+  max-width: 300px;
+  height: 22px;
+  border-radius: 15px;
+  background: #9cecfb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0052d4,
+    #65c7f7,
+    #9cecfb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5c8ddd, #81c4e6, #daaee4);
+  text-align: center;
+}
+
+.newtaskimage {
+  background: inherit;
+}

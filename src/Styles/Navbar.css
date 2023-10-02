@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+.navbar {
+  height: 53px;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  font-family: "Abel", sans-serif;
+  padding-left: 0.3rem;
+  justify-content: space-between;
+}
