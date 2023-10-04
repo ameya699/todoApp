@@ -6,6 +6,11 @@ const MainPage = () => {
   const handleChange = (e) => {
     setcurrvalue(e.target.value);
   };
+  const handleSubmit = (e) => {
+    let taskContent = currvalue;
+    //logic to post to api for inserting data into db
+  };
+
   return (
     <div className="mainpagelayout">
       <form

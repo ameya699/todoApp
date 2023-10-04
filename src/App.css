@@ -1,11 +1,5 @@
 body {
   box-sizing: border-box;
 
-  background: #be93c5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #7bc6cc,
-    #be93c5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7bc6cc, #be93c5);
+  background-color: #9db2bf;
 }

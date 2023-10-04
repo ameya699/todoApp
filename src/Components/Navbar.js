@@ -5,7 +5,7 @@ import linkedInlogo from "../Images/linkdein.png";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1 style={{ textAlign: "center" }}>To Do's</h1>
+      <h1 style={{ alignSelf: "center" }}>To Do's</h1>
       <div style={{ display: "flex", columnGap: "0.2rem" }}>
         <a
           href="https://www.linkedin.com/in/ameyaawatade/"

@@ -1,0 +1,35 @@
+.task-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  row-gap: 1rem;
+  padding-bottom: 6rem;
+}
+
+.task-capsule {
+  min-height: 50px;
+  height: 20px;
+  background-color: antiquewhite;
+  border-radius: 2.4vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-description {
+  padding-left: 0.8rem;
+  align-self: center;
+}
+
+.delete-icon {
+  align-self: center;
+  padding-right: 0.6rem;
+  transition: 0.6s;
+}
+
+.material-symbols-outlined:hover {
+  background-color: rgb(222, 53, 15);
+  border-radius: 12%;
+  cursor: pointer;
+}
