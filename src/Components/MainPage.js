@@ -30,7 +30,15 @@ const MainPage = () => {
           onChange={handleChange}
           placeholder="New Task"
         />
-        <button type="submit" style={{ outline: "none", borderRadius: "15px" }}>
+        <button
+          type="submit"
+          style={{
+            outline: "none",
+            borderRadius: "15px",
+            minWidth: "142px",
+            minHeight: "32px",
+          }}
+        >
           Add Task
         </button>
       </form>

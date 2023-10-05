@@ -2,9 +2,12 @@
   height: auto;
   margin-left: 2.6rem;
   margin-right: 2.6rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   min-height: 8rem;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 1px;
 }
 
 .create-tasks {

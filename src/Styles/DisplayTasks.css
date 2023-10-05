@@ -15,15 +15,20 @@
   border-radius: 2.4vh;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .task-description {
   padding-left: 0.8rem;
   align-self: center;
+  font-size: small;
 }
 
 .delete-icon {
-  align-self: center;
+  padding-right: 0.6rem;
+  transition: 0.6s;
+}
+.complete-icon {
   padding-right: 0.6rem;
   transition: 0.6s;
 }
