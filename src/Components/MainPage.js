@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/MainPage.css";
+import axios from "axios";
 
-const MainPage = () => {
+const MainPage = ({ reffunc }) => {
   const [currvalue, setcurrvalue] = useState("");
+
   const handleChange = (e) => {
     setcurrvalue(e.target.value);
   };
 
   const handleSubmit = async (e) => {
     //logic to post to api for inserting task into db
-
-    e.preventDefault();
+    if (currvalue.trim().length > 0) {
+      axios
+        .get(`http://localhost:5001/tasks/${currvalue}`)
+        .then((res) => console.log(res.data))
+        .catch((err) => console.log(err));
+      await reffunc;
+    }
   };
 
   return (
@@ -28,6 +35,7 @@ const MainPage = () => {
         <input
           type="text"
           className="create-tasks"
+          required
           value={currvalue}
           onChange={handleChange}
           placeholder="New Task"
