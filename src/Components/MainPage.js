@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import "../Styles/MainPage.css";
-import newtask from "../Images/newtask.png";
+
 const MainPage = () => {
   const [currvalue, setcurrvalue] = useState("");
   const handleChange = (e) => {
     setcurrvalue(e.target.value);
   };
-  const handleSubmit = (e) => {
-    let taskContent = currvalue;
-    //logic to post to api for inserting data into db
+
+  const handleSubmit = async (e) => {
+    //logic to post to api for inserting task into db
+
+    e.preventDefault();
   };
 
   return (
     <div className="mainpagelayout">
       <form
-        onSubmit={() => alert("submitted")}
+        onSubmit={handleSubmit}
         style={{
           display: "flex",
           justifyContent: "center",

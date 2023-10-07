@@ -25,16 +25,20 @@
 }
 
 .delete-icon {
-  padding-right: 0.6rem;
   transition: 0.6s;
 }
 .complete-icon {
-  padding-right: 0.6rem;
   transition: 0.6s;
 }
 
-.material-symbols-outlined:hover {
+.delete-icon:hover {
   background-color: rgb(222, 53, 15);
+  border-radius: 12%;
+  cursor: pointer;
+}
+
+.complete-icon:hover {
+  background-color: rgb(80, 164, 45);
   border-radius: 12%;
   cursor: pointer;
 }
